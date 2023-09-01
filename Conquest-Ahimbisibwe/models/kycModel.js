@@ -14,7 +14,8 @@ const KycSchema = new mongoose.Schema({
         
     },
     gender:{
-        type: Number
+        type: String
+        
     },
     country:{
         type: String 

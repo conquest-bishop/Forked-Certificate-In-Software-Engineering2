@@ -17,7 +17,7 @@ router.post('/regform', async (req, res) => {
         res.redirect('/api/kycform');
     }
     catch(error){
-        res.status(404).render('kyc');
+        res.status(404).render('kycc');
         console.log(error)}
 });
 

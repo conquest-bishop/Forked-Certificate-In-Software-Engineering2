@@ -1,0 +1,65 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title GENQ KYC FORM
+  link(rel='stylesheet' href='/Conquest-Ahimbisibwe/public/libs/bootstrap/css/bootstrap.css')
+  link(rel='stylesheet' href='/Conquest-Ahimbisibwe/public/css/kyc.css')
+.form-container
+  form#formId(name='register' action='/api/regform' onsubmit='return Validate(event)' method='POST')
+    .heading
+      h1 GENQ KYC FORM
+    h5 Bio Data
+    hr
+    .row
+      .col
+        input.form-control(type='text' name='firstname' placeholder='First name')
+        span#firstnameError
+      .col
+        input.form-control(type='text' name='lastname' placeholder='Last name')
+        span#firstnameError
+    br
+    .row
+      .col
+        input.form-control(type='text' name='date' placeholder='Date of birth DD/MM/YYYY')
+        span#dateError
+      .col
+        input.form-control(type='text' name='gender' placeholder='Gender')
+        span#genderError
+    h5 Location
+    hr
+    .row
+      .col
+        input.form-control(type='text' name='country' placeholder='Country')
+        span#countryError
+      .col
+        input.form-control(type='text' name='state' placeholder='State/District')
+        span#stateError
+    br
+    .row
+      .col
+        input.form-control(type='text' name='town' placeholder='Town')
+        span#townError
+      .col
+        input.form-control(type='text' name='zip' placeholder='Zip Code')
+        span#zipError
+    h5 Contact and Address
+    hr
+    .row
+      .col
+        input.form-control(type='text' name='phoneone' placeholder='Phone 1')
+        span#phoneoneError
+      .col
+        input.form-control(type='text' name='phonetwo' placeholder='Phone 2')
+        span#phonetwoError
+      br
+      br
+      div
+        input.form-control(type='email' name='email' placeholder='Email')
+        span#emailError
+    br
+    .butt
+      button.btn(type='submit') Submit
+script(src='/Conquest-Ahimbisibwe/public/js/formValidation.js')
+script(src='/Conquest-Ahimbisibwe/public/libs/bootstrap/js/bootstrap.bundle.js')

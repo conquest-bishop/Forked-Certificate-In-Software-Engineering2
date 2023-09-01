@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENQ KYC FORM</title>
+    <link rel="stylesheet" href="/Conquest-Ahimbisibwe/public/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/Conquest-Ahimbisibwe/public/css/kyc.css">
+
+</head>
+<body>
+    <div class="form-container">
+    <form id="formId" name="register" action="#" onsubmit="return Validate(event)" method="POST">
+    <div class="heading">
+        <h1>GENQ KYC FORM</h1>
+    </div>
+    <h5>Bio Data</h5>
+    <hr>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" name="firstname" placeholder="First name">
+          <span id="firstnameError"></span>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="lastname" placeholder="Last name">
+          <span id="firstnameError"></span>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" name="date" placeholder="Date of birth DD/MM/YYYY">
+            <span id="dateError"></span>
+        </div>
+          <div class="col">
+            <input type="text" class="form-control" name="gender" placeholder="Gender">
+            <span id="genderError"></span>
+          </div>
+    </div>
+    <h5>Location</h5>
+    <hr>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" name="country" placeholder="Country">
+          <span id="countryError"></span>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="state" placeholder="State/District">
+          <span id="stateError"></span>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" name="town" placeholder="Town">
+            <span id="townError"></span>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="zip" placeholder="Zip Code">
+            <span id="zipError"></span>
+          </div>
+    </div>
+    <h5>Contact and Address</h5>
+    <hr>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" name="phoneone" placeholder="Phone 1">
+          <span id="phoneoneError"></span>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="phonetwo" placeholder="Phone 2">
+          <span id="phonetwoError"></span>
+        </div>
+        <br>
+        <br>
+        <div>
+        <input type="email" class="form-control" name="email" placeholder="Email">
+        <span id="emailError"></span>
+        </div>
+    </div>
+    <br>
+    <div class="butt">
+        <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+    <script src="/Conquest-Ahimbisibwe/public/js/formValidation.js"></script>
+    <script src="/Conquest-Ahimbisibwe/public/libs/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

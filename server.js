@@ -10,8 +10,8 @@ const app = express();
 
 app.engine("pug", require("pug").__express);
 app.set("view engine", "pug");
-// app.set("views", path.join(__dirname, "views"))
-app.set('views', 'C:\\Users\\user\\Documents\\Forked-Certificate-In-Software-Engineering2\\views');
+app.set("views", path.join(__dirname, "views"))
+// app.set('views', 'C:\\Users\\user\\Documents\\Forked-Certificate-In-Software-Engineering2\\views');
 
 // ...other middleware and route setup
 
